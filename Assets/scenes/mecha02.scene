@@ -136,6 +136,7 @@
           "OnComponentUpdate": null,
           "Priority": 0,
           "Projection": "Sphere",
+          "RenderExcludeTags": "",
           "Resolution": "Small",
           "Texture": "textures/cubemaps/default2.vtex",
           "TintColor": "1,1,1,1",
@@ -878,37 +879,6 @@
           "OnComponentUpdate": null
         },
         {
-          "__type": "CustomController",
-          "__guid": "1b5f0ddb-07d7-4c91-92c3-c5190cfe4238",
-          "__enabled": true,
-          "Flags": 0,
-          "Gravity": 800,
-          "JumpForce": 300,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "WalkSpeed": 160
-        },
-        {
-          "__type": "AimRefBase",
-          "__guid": "80aad5c9-6d62-4068-bda6-bd45174166e4",
-          "__enabled": true,
-          "Flags": 0,
-          "Camera": null,
-          "LineColor": "0,1,1,1",
-          "MaxDistance": 500,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "ShowDebugDraw": true
-        },
-        {
           "__type": "ThirdPersonPlayerRotation",
           "__guid": "15be0243-a247-492b-b98c-82ab72ff3834",
           "__enabled": true,
@@ -972,6 +942,36 @@
             "_type": "gameobject",
             "go": "32c82e23-ccca-4364-826d-71ead5360635"
           }
+        },
+        {
+          "__type": "CustomController",
+          "__guid": "3a9de095-dfba-4471-a3cf-883bb4277636",
+          "__enabled": false,
+          "Flags": 0,
+          "Gravity": 800,
+          "JumpForce": 300,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "WalkSpeed": 160
+        },
+        {
+          "__type": "CustomController02",
+          "__guid": "098c25c3-b010-41fe-95d4-07a9040a4f90",
+          "__enabled": true,
+          "Flags": 0,
+          "Gravity": 800,
+          "JumpForce": 500,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "WalkSpeed": 160
         }
       ],
       "Children": [
@@ -1116,6 +1116,310 @@
           "OwnerTransfer": 1,
           "Components": [],
           "Children": []
+        },
+        {
+          "__guid": "db3b9a22-3a3e-4b6a-902f-fec9bb174ac4",
+          "__version": 2,
+          "Flags": 0,
+          "Name": "ReadLeftMount",
+          "Position": "-27.2841949,12,122",
+          "Rotation": "0,0,0,1",
+          "Scale": "1,1,1",
+          "Tags": "",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkFlags": 0,
+          "NetworkOrphaned": 0,
+          "NetworkTransmit": true,
+          "OwnerTransfer": 1,
+          "Components": [
+            {
+              "__type": "SampleRearWeapon01",
+              "__guid": "43bab3b0-3f58-4caf-b2fa-113d723a84c9",
+              "__enabled": true,
+              "Flags": 0,
+              "hot_key": "RearLeftWeapon1",
+              "ModelRenderer": null,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "PHFirePoint": {
+                "_type": "gameobject",
+                "go": "76b7937c-2936-4dd1-9f78-ec835a467d38"
+              },
+              "PrefabProjectile": {
+                "_type": "gameobject",
+                "prefab": "prefabs/sample_projectile.prefab"
+              }
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "a63ae6ef-eb98-4429-8b2c-234c5148378d",
+              "__version": 2,
+              "Flags": 0,
+              "Name": "Cube",
+              "Position": "0,0,0",
+              "Rotation": "0,0,0,1",
+              "Scale": "0.200000003,0.200000003,0.200000003",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkFlags": 0,
+              "NetworkOrphaned": 0,
+              "NetworkTransmit": true,
+              "OwnerTransfer": 1,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "d9d528cb-a654-4f0f-b29e-440c43cd2584",
+                  "__enabled": true,
+                  "Flags": 0,
+                  "BodyGroups": 18446744073709551615,
+                  "CreateAttachments": false,
+                  "LodOverride": null,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Materials": null,
+                  "Model": "models/dev/box.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": []
+            },
+            {
+              "__guid": "fc118fa0-8671-46ab-a8de-94b29f62aa0b",
+              "__version": 2,
+              "Flags": 0,
+              "Name": "Cube (4)",
+              "Position": "0,0,37.1495667",
+              "Rotation": "0,0,0,1",
+              "Scale": "0.489999771,0.200000003,0.200000003",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkFlags": 0,
+              "NetworkOrphaned": 0,
+              "NetworkTransmit": true,
+              "OwnerTransfer": 1,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "a2cb64da-3e3b-48ae-93ef-1f20a99f3a54",
+                  "__enabled": true,
+                  "Flags": 0,
+                  "BodyGroups": 18446744073709551615,
+                  "CreateAttachments": false,
+                  "LodOverride": null,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Materials": null,
+                  "Model": "models/dev/box.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": []
+            },
+            {
+              "__guid": "76b7937c-2936-4dd1-9f78-ec835a467d38",
+              "__version": 2,
+              "Flags": 0,
+              "Name": "FirePoint",
+              "Position": "16.2240143,0,36.832428",
+              "Rotation": "0,0,0,1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkFlags": 0,
+              "NetworkOrphaned": 0,
+              "NetworkTransmit": true,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            }
+          ]
+        },
+        {
+          "__guid": "6802de66-136f-478a-aaf7-2e8241744e61",
+          "__version": 2,
+          "Flags": 0,
+          "Name": "ReadRightMount",
+          "Position": "-26.4213257,-12,122",
+          "Rotation": "0,0,0,1",
+          "Scale": "1,1,1",
+          "Tags": "",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkFlags": 0,
+          "NetworkOrphaned": 0,
+          "NetworkTransmit": true,
+          "OwnerTransfer": 1,
+          "Components": [
+            {
+              "__type": "SampleRearWeapon01",
+              "__guid": "bf44f7b0-3d3a-4c56-a193-f6674858ad4e",
+              "__enabled": true,
+              "Flags": 0,
+              "hot_key": "RearRightWeapon1",
+              "ModelRenderer": null,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "PHFirePoint": {
+                "_type": "gameobject",
+                "go": "e73fc321-05eb-4f2e-a527-1cbd08995318"
+              },
+              "PrefabProjectile": {
+                "_type": "gameobject",
+                "prefab": "prefabs/sample_projectile.prefab"
+              }
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "93334ce4-4e7b-4688-9993-0ccbd44b18a9",
+              "__version": 2,
+              "Flags": 0,
+              "Name": "Cube",
+              "Position": "0,0,0",
+              "Rotation": "0,0,0,1",
+              "Scale": "0.200000003,0.200000003,0.200000003",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkFlags": 0,
+              "NetworkOrphaned": 0,
+              "NetworkTransmit": true,
+              "OwnerTransfer": 1,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "625997f9-f9f8-4cf4-b5ff-4143886539d0",
+                  "__enabled": true,
+                  "Flags": 0,
+                  "BodyGroups": 18446744073709551615,
+                  "CreateAttachments": false,
+                  "LodOverride": null,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Materials": null,
+                  "Model": "models/dev/box.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": []
+            },
+            {
+              "__guid": "14f31441-145b-4b3b-aa83-c5b9aaf7e0b0",
+              "__version": 2,
+              "Flags": 0,
+              "Name": "Cube (4)",
+              "Position": "0,0,37.1495667",
+              "Rotation": "0,0,0,1",
+              "Scale": "0.489999771,0.200000003,0.200000003",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkFlags": 0,
+              "NetworkOrphaned": 0,
+              "NetworkTransmit": true,
+              "OwnerTransfer": 1,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "8ecf31b9-fb95-4d0b-9ce8-64dc971cec30",
+                  "__enabled": true,
+                  "Flags": 0,
+                  "BodyGroups": 18446744073709551615,
+                  "CreateAttachments": false,
+                  "LodOverride": null,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Materials": null,
+                  "Model": "models/dev/box.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": []
+            },
+            {
+              "__guid": "e73fc321-05eb-4f2e-a527-1cbd08995318",
+              "__version": 2,
+              "Flags": 0,
+              "Name": "FirePoint",
+              "Position": "16.2240143,0,36.832428",
+              "Rotation": "0,0,0,1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkFlags": 0,
+              "NetworkOrphaned": 0,
+              "NetworkTransmit": true,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            }
+          ]
         }
       ]
     },
@@ -1440,14 +1744,14 @@
       "CustomBounds": false
     },
     "GameObjectSystems": {
-      "Sandbox.SelectionSetsSystem": {
-        "Data": {
-          "SelectionSets": []
-        }
-      },
       "Sandbox.Clutter.ClutterGridSystem": {
         "Storage": {
           "$blob": "24be8b27-01f2-4154-8458-f0b540255e7a"
+        }
+      },
+      "Sandbox.SelectionSetsSystem": {
+        "Data": {
+          "SelectionSets": []
         }
       }
     }

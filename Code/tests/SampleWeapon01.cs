@@ -23,13 +23,9 @@ public sealed class SampleWeapon01 : Component
 	public void FireProjectile(){
 		Log.Info("FIRED...");
 
-
-
 		if (ModelRenderer == null || PrefabProjectile == null) return;
 
 		var attachmentBone = ModelRenderer.GetAttachmentObject("fire_point");
-
-			
 
 		if (attachmentBone != null)
     {

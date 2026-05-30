@@ -19,7 +19,8 @@ public class AimRefBase : Component
         if ( mainCamera == null ) return;
 
         // Formulate a forward Ray precisely out of the center of the camera
-        Ray lookRay = new Ray( mainCamera.Transform.Position, mainCamera.Transform.Rotation.Forward );
+        // Ray lookRay = new Ray( mainCamera.Transform.Position, mainCamera.Transform.Rotation.Forward );
+        Ray lookRay = new Ray( mainCamera.WorldPosition, mainCamera.WorldRotation.Forward );
 
         // Run the Scene-based physics trace
         LastTraceResult = Scene.Trace

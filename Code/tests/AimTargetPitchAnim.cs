@@ -65,7 +65,7 @@ public sealed class AimTargetPitchAnim : Component
 
       // If you want pitch relative to the weapon's current forward (local)
       // Vector3 localDir = WeaponHandle.WorldRotation.Inverse * dir;
-      Log.Info($"pitch {pitch}");
+      // Log.Info($"pitch {pitch}");
       Model.Set("aim_degree", pitch);
     }else{
       // endPos
@@ -76,7 +76,7 @@ public sealed class AimTargetPitchAnim : Component
       if ( WeaponHandle == null ) return;
       Vector3 dir = (finalAimPosition - WeaponHandle.WorldPosition).Normal;
       float pitch = MathX.RadianToDegree( MathF.Asin( dir.z ) ); 
-      Log.Info($"pitch {pitch}");
+      // Log.Info($"pitch {pitch}");
       Model.Set("aim_degree", pitch);
     }
 
